@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/40 to-transparent z-10 pointer-events-none" />
         <img
-          src="./image/OlhoFoco.jpg"
+          src="/image/OlhoFoco.jpg" // caminho absoluto
           alt="Close up of beautiful female eye with long lashes"
           className="w-full h-full object-cover object-center"
           loading="eager"
@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
               merece ser valorizada.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 ">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="terracota"
                 onClick={() =>
