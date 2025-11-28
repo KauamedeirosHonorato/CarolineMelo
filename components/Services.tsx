@@ -9,7 +9,7 @@ const beautyServices: Service[] = [
     price: "R$ 70,00",
     description:
       "Técnica completa que reconstrói o desenho natural das sobrancelhas, valorizando a simetria do rosto. Ideal para quem deseja sobrancelhas naturais, cheias e com acabamento impecável.",
-    image: "./image/Reconstrutivo.jpg",
+    image: "./public/Image/Reconstrutivo.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const beautyServices: Service[] = [
     price: "R$ 150,00",
     description:
       "Com Reconstrução e Coloração (opcional). Tratamento que alinha, hidrata e remodela os fios, criando sobrancelhas mais cheias, definidas e sofisticadas.",
-    image: "./image/Laminado.webp",
+    image: "./public/Image/Laminado.webp",
   },
   {
     id: 3,
@@ -25,11 +25,11 @@ const beautyServices: Service[] = [
     price: "R$ 150,00",
     description:
       "Técnica que curva, realça e trata os fios naturais, proporcionando efeito de cílios alongados, nutridos e com maior durabilidade — tudo sem extensões ou necessidade de manutenção.",
-    image: "./image/lash.jpg",
+    image: "./public/Image/lash.jpg",
   },
 ];
 
-const epilationServices = [
+export const epilationServices = [
   {
     name: "Depilação de Nariz",
     price: "R$ 20,00",

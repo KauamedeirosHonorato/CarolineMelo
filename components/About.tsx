@@ -34,7 +34,7 @@ export const About: React.FC = () => {
               */}
               <div className="relative w-full max-w-md mx-auto h-[450px] lg:h-[550px] overflow-hidden rounded-sm shadow-xl bg-gray-100">
                 <img
-                  src="./image/PerfilMelo.jpg"
+                  src="./public/image/PerfilMelo.jpg"
                   alt="Caroline Melo Profissional"
                   /* --- MUDANÇA AQUI ---
                      Adicionado 'object-top'. Isso garante que, se a imagem precisar ser cortada

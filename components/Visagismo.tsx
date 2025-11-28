@@ -211,8 +211,7 @@ export const Visagismo: React.FC = () => {
               </ul>
 
               <Button
-                variant="terracota"
-                fullWidth={false} // se quiser que seja full width, coloca true
+                variant="outline"
                 onClick={() =>
                   window.open(
                     "https://api.whatsapp.com/send/?phone=554498509063&text=Quero+real%C3%A7ar+minha+beleza.+Gostaria+de+agendar+um+atendimento.&type=phone_number&app_absent=0",
@@ -234,7 +233,7 @@ export const Visagismo: React.FC = () => {
             >
               <div className="aspect-[4/5] rounded-t-full overflow-hidden relative shadow-2xl mx-auto max-w-md">
                 <img
-                  src="./image/Visagismo.jpg"
+                  src="./public/image/Visagismo.jpg"
                   alt="Análise de Visagismo Facial"
                   className="w-full h-full object-cover"
                   loading="lazy"
