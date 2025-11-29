@@ -233,7 +233,7 @@ export const Visagismo: React.FC = () => {
             >
               <div className="aspect-[4/5] rounded-t-full overflow-hidden relative shadow-2xl mx-auto max-w-md">
                 <img
-                  src="./public/image/Visagismo.jpg"
+                  src="/Image/Visagismo.jpg"
                   alt="Análise de Visagismo Facial"
                   className="w-full h-full object-cover"
                   loading="lazy"

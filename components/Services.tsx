@@ -9,7 +9,7 @@ const beautyServices: Service[] = [
     price: "R$ 70,00",
     description:
       "Técnica completa que reconstrói o desenho natural das sobrancelhas, valorizando a simetria do rosto. Ideal para quem deseja sobrancelhas naturais, cheias e com acabamento impecável.",
-    image: "./public/Image/Reconstrutivo.jpg",
+    image: "/Image/Reconstrutivo.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const beautyServices: Service[] = [
     price: "R$ 150,00",
     description:
       "Com Reconstrução e Coloração (opcional). Tratamento que alinha, hidrata e remodela os fios, criando sobrancelhas mais cheias, definidas e sofisticadas.",
-    image: "./public/Image/Laminado.webp",
+    image: "/Image/Laminado.webp",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const beautyServices: Service[] = [
     price: "R$ 150,00",
     description:
       "Técnica que curva, realça e trata os fios naturais, proporcionando efeito de cílios alongados, nutridos e com maior durabilidade — tudo sem extensões ou necessidade de manutenção.",
-    image: "./public/Image/lash.jpg",
+    image: "/Image/lash.jpg",
   },
 ];
 

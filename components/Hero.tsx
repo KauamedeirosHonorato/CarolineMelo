@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-white/40 to-transparent z-10 pointer-events-none" />
         <img
-          src="./public/image/OlhoFoco.jpg" // Corrigido para Image maiúsculo
+          src="/Image/OlhoFoco.jpg" // Corrigido para Image maiúsculo
           alt="Close up of beautiful female eye with long lashes"
           className="w-full h-full object-cover object-center"
           loading="eager"
