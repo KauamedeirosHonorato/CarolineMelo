@@ -3,9 +3,13 @@ import { MapPin, Phone, Instagram, Send, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const CallToAction = () => (
-  <div
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 0.6 }}
     className="bg-white p-10 md:p-16 shadow-2xl shadow-rose-gold/90 rounded-xl 
-    relative -top-12 md:-top-40 mb-10 z-20 
+    relative -top-12 md:-40 mb-10 z-20 
     border border-white/50 backdrop-blur-sm"
   >
     <div className="flex flex-col md:flex-row items-center justify-between gap-10">
@@ -24,6 +28,7 @@ const CallToAction = () => (
           href="https://wa.me/554498509063?text=Quero%20realçar%20minha%20beleza.%20Gostaria%20de%20agendar%20um%20atendimento."
           target="_blank"
           rel="noreferrer"
+          aria-label="Agendar Atendimento no WhatsApp"
           className="group relative inline-flex items-center gap-3 px-10 py-5 rounded-full font-sans uppercase tracking-widest text-xs font-bold transition-all duration-300 shadow-lg shadow-rose-gold/30 hover:shadow-rose-gold/50 hover:-translate-y-1 overflow-hidden bg-rose-gold text-white"
         >
           <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
@@ -37,11 +42,17 @@ const CallToAction = () => (
         </a>
       </motion.div>
     </div>
-  </div>
+  </motion.div>
 );
 
 const BrandColumn = () => (
-  <div className="md:col-span-1">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.6, delay: 0 }}
+    className="md:col-span-1"
+  >
     <a
       href="#"
       className="font-serif text-2xl tracking-widest uppercase text-graphite block mb-4"
@@ -49,13 +60,19 @@ const BrandColumn = () => (
       Caroline Melo
     </a>
     <p className="font-sans text-sm text-graphite/70 leading-relaxed font-medium">
-      Designer de Sobrancelhas & Epiladora Profissional.
+      Designer de Sobrancelhas & Depiladora Profissional.
     </p>
-  </div>
+  </motion.div>
 );
 
 const ContactColumn = () => (
-  <div className="md:col-span-1">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.6, delay: 0.1 }}
+    className="md:col-span-1"
+  >
     <h4 className="font-sans font-bold text-xs uppercase tracking-widest text-gold-opaque mb-6">
       Contato
     </h4>
@@ -80,6 +97,7 @@ const ContactColumn = () => (
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Localização do Caroline Melo Beauty Studio no Google Maps"
             className="transition-all duration-700 ease-in-out opacity-100"
           ></iframe>
         </div>
@@ -90,6 +108,7 @@ const ContactColumn = () => (
           href="https://api.whatsapp.com/send/?phone=554498509063&text=Quero+real%C3%A7ar+minha+beleza.+Gostaria+de+agendar+um+atendimento.&type=phone_number&app_absent=0"
           target="_blank"
           rel="noreferrer"
+          aria-label="Contatar via WhatsApp"
           className="flex items-center gap-3"
         >
           <div className="p-2 bg-rose-gold/10 rounded-full group-hover:bg-rose-gold/20 transition-colors">
@@ -101,11 +120,16 @@ const ContactColumn = () => (
         </a>
       </li>
     </ul>
-  </div>
+  </motion.div>
 );
 
 const HoursColumn = () => (
-  <div>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+  >
     <h4 className="font-sans font-bold text-xs uppercase tracking-widest text-gold-opaque mb-6">
       Horários
     </h4>
@@ -116,11 +140,16 @@ const HoursColumn = () => (
         Atendimento com hora marcada
       </li>
     </ul>
-  </div>
+  </motion.div>
 );
 
 const SocialColumn = () => (
-  <div>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ duration: 0.6, delay: 0.3 }}
+  >
     <h4 className="font-sans font-bold text-xs uppercase tracking-widest text-gold-opaque mb-6">
       Social
     </h4>
@@ -129,6 +158,7 @@ const SocialColumn = () => (
         href="https://instagram.com/cm.carolmelo"
         target="_blank"
         rel="noreferrer"
+        aria-label="Visitar perfil do Instagram"
         className="group relative w-12 h-12 rounded-full border border-gray-rose/50 flex items-center justify-center text-graphite/70 overflow-hidden hover:border-rose-gold hover:shadow-lg hover:shadow-rose-gold/20 transition-all duration-300"
       >
         <div className="absolute inset-0 bg-rose-gold translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
@@ -143,6 +173,7 @@ const SocialColumn = () => (
       href="https://www.instagram.com/cm.carolmelo/"
       target="_blank"
       rel="noreferrer"
+      aria-label="Perfil do Instagram @cm.carolmelo"
       className="inline-flex items-center gap-1 text-xs font-sans text-graphite/60 mt-4 
       hover:text-rose-gold transition-colors relative group"
     >
@@ -150,7 +181,7 @@ const SocialColumn = () => (
       <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-rose-gold transition-all duration-300 group-hover:w-full" />
       <ArrowUpRight size={12} />
     </a>
-  </div>
+  </motion.div>
 );
 
 const FooterInfo = () => (
@@ -175,6 +206,7 @@ const FooterBottom = () => {
             <a
                 href="#"
                 className="relative hover:text-rose-gold transition-colors group"
+                aria-label="Política de Privacidade"
             >
                 Privacidade
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-rose-gold transition-all duration-300 group-hover:w-full" />
@@ -182,6 +214,7 @@ const FooterBottom = () => {
             <a
                 href="#"
                 className="relative hover:text-rose-gold transition-colors group"
+                aria-label="Termos de Uso"
             >
                 Termos de Uso
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-rose-gold transition-all duration-300 group-hover:w-full" />

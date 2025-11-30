@@ -33,6 +33,9 @@ export default {
       backgroundImage: {
         "luxury-gradient": "linear-gradient(135deg, #D88F7A, #C47863)",
       },
+      screens: {
+        'xs': '400px',
+      }
     },
   },
   plugins: [],

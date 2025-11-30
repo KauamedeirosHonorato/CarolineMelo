@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         <img
           src="/Image/OlhoFoco.jpg" // Corrigido para Image maiúsculo
           alt="Close up of beautiful female eye with long lashes"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-right xs:object-left md:object-center"
           loading="eager"
           fetchPriority="high"
         />
