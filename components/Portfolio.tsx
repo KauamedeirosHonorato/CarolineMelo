@@ -5,19 +5,19 @@ const results = [
   {
     id: 2,
     title: "Design Natural",
-    img: "./public/image/Procedimento2.jpg",
+    img: "/Image/Procedimento2.jpg",
     category: "Sobrancelhas",
   },
   {
     id: 3,
     title: "Brow Lamination",
-    img: "./public/image/Procedimento3.jpg",
+    img: "/Image/Procedimento3.jpg",
     category: "Sobrancelhas",
   },
   {
     id: 1,
     title: "Lifting de Cílios",
-    img: "./public/image/Procedimento4.jpg",
+    img: "/Image/Procedimento4.jpg",
     category: "Cílios",
   },
 ];
