@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                 Caroline Melo
               </a>
               <p className="font-sans text-sm text-graphite/70 leading-relaxed font-medium">
-                Designer de Sobrancelhas & Epiladora Profissional.
+                Designer de Sobrancelhas & Depiladora Profissional.
               </p>
             </div>
 
@@ -80,30 +80,59 @@ export const Footer: React.FC = () => {
                 Contato
               </h4>
               <ul className="space-y-6">
-                {/* Item Endereço + Mapa */}
-                <li className="flex flex-col gap-3 group cursor-default">
-                  <div className="flex items-start gap-3 text-graphite/70 text-sm">
-                    <div className="p-2 bg-rose-gold/10 rounded-full group-hover:bg-rose-gold/20 transition-colors">
-                      <MapPin size={16} className="text-rose-gold shrink-0" />
+                <li className="flex flex-col md:flex-row gap-6">
+                  {/* Item Endereço + Mapa */}
+                  <div className="flex flex-col gap-3 group cursor-default w-full md:w-1/2">
+                    <div className="flex-grow flex items-start gap-3 text-graphite/70 text-sm">
+                      <div className="p-2 bg-rose-gold/10 rounded-full group-hover:bg-rose-gold/20 transition-colors">
+                        <MapPin size={16} className="text-rose-gold shrink-0" />
+                      </div>
+                      <span className="mt-1">
+                        Rua Padre Germano José Mayer, nº 887, Zona 02 <br />
+                        Maringá – PR
+                      </span>
                     </div>
-                    <span className="mt-1">
-                      Rua Padre Germano José Mayer, nº 887, Zona 02 <br />
-                      Maringá – PR
-                    </span>
+
+                    {/* 🗺️ MAPA EMBED GOOGLE MAPS */}
+                    <div className="w-full h-32 rounded-lg overflow-hidden border border-rose-gold/20 mt-2 shadow-sm">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4649197680457!2d-51.94222788448029!3d-23.426646767125562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd98b2c2e6c3b%3A0x4d9d4b07d5290c3b!2sRua%20Padre%20Germano%20Jos%C3%A9%20Mayer%2C%20887%20-%20Zona%2002%2C%20Maring%C3%A1%20-%20PR%2C%2086120-050%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="transition-all duration-700 ease-in-out opacity-100"
+                      ></iframe>
+                    </div>
                   </div>
 
-                  {/* 🗺️ MAPA EMBED GOOGLE MAPS */}
-                  <div className="w-full h-32 rounded-lg overflow-hidden border border-rose-gold/20 mt-2 shadow-sm">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4649197680457!2d-51.94222788448029!3d-23.426646767125562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd98b2c2e6c3b%3A0x4d9d4b07d5290c3b!2sRua%20Padre%20Germano%20Jos%C3%A9%20Mayer%2C%20887%20-%20Zona%2002%2C%20Maring%C3%A1%20-%20PR%2C%2086120-050%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="transition-all duration-700 ease-in-out opacity-100"
-                    ></iframe>
+                  {/* Item Endereço + Mapa Marialva */}
+                  <div className="flex flex-col gap-3 group cursor-default w-full md:w-1/2">
+                    <div className="flex-grow flex items-start gap-3 text-graphite/70 text-sm">
+                      <div className="p-2 bg-rose-gold/10 rounded-full group-hover:bg-rose-gold/20 transition-colors">
+                        <MapPin size={16} className="text-rose-gold shrink-0" />
+                      </div>
+                      <span className="mt-1">
+                        R. Washington Luiz, 867 - Jardim Jaguaruna <br />
+                        Marialva - PR, 86990-000
+                      </span>
+                    </div>
+
+                    {/* 🗺️ MAPA EMBED GOOGLE MAPS */}
+                    <div className="w-full h-32 rounded-lg overflow-hidden border border-rose-gold/20 mt-2 shadow-sm">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.541491292116!2d-51.79612018454745!3d-23.48713713076939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecc47223294def%3A0x79abacd8ca01478e!2sR.%20Washington%20Luiz%2C%20867%20-%20Jardim%20Jaguaruna%2C%20Marialva%20-%20PR%2C%2086990-000!5e0!3m2!1spt-BR!2sbr!4v1717188219353!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="transition-all duration-700 ease-in-out opacity-100"
+                      ></iframe>
+                    </div>
                   </div>
                 </li>
 
