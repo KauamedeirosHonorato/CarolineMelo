@@ -13,7 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "transition-all duration-300 font-sans tracking-wider uppercase text-xs md:text-sm py-3 px-8 rounded-sm font-medium";
+    "transition-all duration-300 font-sans tracking-wider uppercase text-xs md:text-sm py-3 px-6 sm:px-8 rounded-sm font-medium";
 
   // Dentro do Button.tsx, adicione um variant "terracota"
   const variants = {
